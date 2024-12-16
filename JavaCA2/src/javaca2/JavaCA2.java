@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author colmj
  */
-public class JavaCA2 {
+public class JavaCA2{
 
     
     /**
@@ -70,3 +70,7 @@ public class JavaCA2 {
         return -1;
     }
 }
+
+
+     
+
