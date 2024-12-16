@@ -3,8 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package javaca2;
-
+//This imports the HashSet class, which is used to store unique elements and allows quick checks for existence.
 import java.util.HashSet;
+//This imports the Scanner class, used to take user input from the console.
 import java.util.Scanner;
 
 /**
@@ -19,19 +20,21 @@ public class JavaCA2{
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        //Creates a Scanner object to read user input.
          Scanner scanner = new Scanner(System.in);
 
         // Take the size of the array as input
         System.out.print("Enter the size of the array: ");
+        //Reads the input from the user and stores it in the variable size.
         int size = scanner.nextInt();
 
-        // Handle edge cases for invalid sizes
+        //Checks if the user entered an invalid size (e.g., zero or negative).
+//If the size is invalid, the program outputs a message and exits using return.
         if (size <= 0) {
             System.out.println("Invalid array size.");
             return;
         }
-
+        //Initializes an integer array of the specified size.
         int[] array = new int[size];
 
         // Take the elements of the array as input
@@ -44,6 +47,8 @@ public class JavaCA2{
         int firstRepeated = findFirstRepeated(array);
 
         // Output the result
+        //If findFirstRepeated returned -1, it means there are no repeated elements in the array.
+ //Prints the first repeated element if found, or a message indicating no repeated elements.
         if (firstRepeated != -1) {
             System.out.println("First repeated element: " + firstRepeated);
         } else {
@@ -55,6 +60,7 @@ public class JavaCA2{
 
     private static int findFirstRepeated(int[] array) {
         // Use a HashSet to track seen elements
+        //It ensures quick lookups to check whether an element exists in the set.
         HashSet<Integer> seen = new HashSet<>();
 
         for (int num : array) {
