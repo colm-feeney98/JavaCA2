@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
+//https://github.com/colm-feeney98/JavaCA2.git
 package javaca2;
 import java.util.Scanner;
 
@@ -39,7 +40,7 @@ public class BubbleSort {
         // Display the total number of swaps
         System.out.println("Total number of swaps: " + swapCount);
     }
-
+//printArray method iterates through the array and prints each element:
     private static int bubbleSort(int[] array) {
         int swapCount = 0;
         int n = array.length;
